@@ -1,4 +1,5 @@
-**Authorization of Person entering a premises using Computer Vision**
+# Face Recognition
+Authorization of Person identity using Computer Vision
 
 This python script will take name of image as input (in the same directory) and find if the face of 
 person is in our database (the image folder), which has the faces of known person who are authorized to enter
@@ -20,26 +21,29 @@ In this, I've used a pre-trained model by dlib. It detects faces, using 68 point
 ***Requirements***
 
 **-dlib**
-
+```
   pip install dlib
-
+```
 **-opencv**
-
+```
  pip install opencv-python
-
+```
 **-face_recognition**
-
+```
  pip install face_recognition
-
+```
 **-numpy**
-
+```
  pip install numpy
-
+```
 ***Run***
 
-Run the script by typing
+Run the script by typing following command in the command prompt or terminal of current directory.
 
-**python loadimages.py** , in the command prompt or terminal of current directory.
+```
+python loadimages.py
+```
+ 
 
 This will create embeddings for all the images in the images folder (i.e. images in our database from which we will 
 identify the faces) and store it in encodings.npy
